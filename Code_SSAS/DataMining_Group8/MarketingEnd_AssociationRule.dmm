@@ -1,0 +1,370 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a030b399-a180-4101-bf3d-9f956e706abe" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>MarketingEnd_AssociationRule</ID>
+  <Name>MarketingEnd_AssociationRule</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Marketing_end</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9642" scrolltop="-3384" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23453" y="11769" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Marketing_end" left="-806" top="-2984" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4128" height="11075" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000020100000432b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Marketing_end" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-9642</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3384</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-806</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2984</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="70ac0584-5af0-4cb5-8b75-cdb4e697f430">
+    <DataSourceViewID>MARKETING</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e528e762-9570-46d4-aea0-c45eb6c46ba3">
+      <ID>Accepted Cmp1</ID>
+      <Name>Accepted Cmp1</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c211da5-ce0f-47e0-8738-61b044598e63">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4d16763-cb73-48f4-8f28-43ac94576f0a">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>AcceptedCmp1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fbd22d9c-a087-4f63-889f-e337d4518130">
+      <ID>Accepted Cmp2</ID>
+      <Name>Accepted Cmp2</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56c1c689-00f9-4768-ad29-c1494d65411c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb18b2c2-12c4-49c8-882b-051c84e46af3">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>AcceptedCmp2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9224c371-fe99-47fb-8b2a-463a92ab036a">
+      <ID>Accepted Cmp3</ID>
+      <Name>Accepted Cmp3</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7bfd4906-065e-4277-9dfb-0ba778691ae6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5be9d014-8450-42b2-8a5b-27c3c985d677">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>AcceptedCmp3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3751bee7-bcbe-4239-9254-bb6868b74469">
+      <ID>Accepted Cmp4</ID>
+      <Name>Accepted Cmp4</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e4f5c2c8-5563-4623-8036-5a27d0c8a8bd">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="31249493-d1c6-462e-b76d-c2a79046b1f2">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>AcceptedCmp4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ff59f9c-9ab5-4a29-a14d-4181a822c9fe">
+      <ID>Accepted Cmp5</ID>
+      <Name>Accepted Cmp5</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16aad58c-4ddd-422a-8300-71405de4e608">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b57216dc-aa4d-4952-b8ce-da618db38436">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>AcceptedCmp5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="39fe2791-5810-418a-bfc6-4f96dc9735b0">
+      <ID>Fish</ID>
+      <Name>Fish</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="45f89a80-e8a4-4b92-8bca-48b1173cc410">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b04aef4-dd4b-479e-b7db-45f43a733115">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Fish</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="249bf615-e118-4155-a9cb-6efbaf45e981">
+      <ID>Fruits</ID>
+      <Name>Fruits</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54c868d5-62a0-44cd-83f9-ec5b62a5c7f1">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="883612a0-b167-49fb-8495-2e117b18e558">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Fruits</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d076e7b0-b0c7-4639-b8f0-1930e0c0383a">
+      <ID>Gold</ID>
+      <Name>Gold</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c950e33-7c0c-4562-9235-f804cc5fb489">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e094b292-15b8-4f2d-b240-80d87793b747">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Gold</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b49f9bb1-85af-451c-99c4-40bba4d14dbc">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e55ce7cd-a014-414f-aa2e-40526a07c55e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92a235fa-49fe-4e01-9254-9470db2b0d53">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="abed10bf-6493-4d4d-b508-c10ad758204c">
+      <ID>Meat</ID>
+      <Name>Meat</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="263e5d1f-cf74-4e04-81f2-6b4ab1ae9ff6">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47d66c46-1bca-437a-af76-e1e4f3d7e3e1">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Meat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0ec1a54d-e5cd-4e21-aa21-b2f7d529f16d">
+      <ID>Response</ID>
+      <Name>Response</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb6b1bd7-8a2c-4eed-b921-dce13ef36162">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a7f04bd-dc6d-421b-8ba5-6edbfde8b8d3">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Response</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2995591b-2c2a-462e-b60b-f78a7378c010">
+      <ID>Sweets</ID>
+      <Name>Sweets</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37b03879-6746-4284-92bb-a79a60b6b3e8">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eab7cc20-1aae-43b1-a29b-57cd76cea619">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Sweets</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7cbf5548-583b-4665-a1f6-6e8a774250c7">
+      <ID>Wines</ID>
+      <Name>Wines</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9585e38d-f4a9-4032-a858-9baaf5f89624">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa837fef-6eb8-4aaf-8a51-276eeea04ac1">
+            <TableID>dbo_Marketing_end</TableID>
+            <ColumnID>Wines</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="1080ff22-5ee2-4500-adbe-72df0ff0ce23">
+      <ID>MarketingEnd_AssociationRule</ID>
+      <Name>MarketingEnd_AssociationRule</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="0ed84461-c69a-4fed-8b7e-f743c4d14087">
+          <ID>Accepted Cmp1</ID>
+          <Name>Accepted Cmp1</Name>
+          <SourceColumnID>Accepted Cmp1</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d454a0bf-4c98-45bb-a754-12e77d5fb1de">
+          <ID>Accepted Cmp2</ID>
+          <Name>Accepted Cmp2</Name>
+          <SourceColumnID>Accepted Cmp2</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e4e6e185-4ef3-4bd7-84e8-251cbc71d980">
+          <ID>Accepted Cmp3</ID>
+          <Name>Accepted Cmp3</Name>
+          <SourceColumnID>Accepted Cmp3</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b0a893b4-97fc-435a-9d72-d2c7c118b54a">
+          <ID>Accepted Cmp4</ID>
+          <Name>Accepted Cmp4</Name>
+          <SourceColumnID>Accepted Cmp4</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a9e60656-8292-4aad-a836-41c84bea15e3">
+          <ID>Accepted Cmp5</ID>
+          <Name>Accepted Cmp5</Name>
+          <SourceColumnID>Accepted Cmp5</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c0f84368-b983-45b1-b937-f2f0c1380ed8">
+          <ID>Fish</ID>
+          <Name>Fish</Name>
+          <SourceColumnID>Fish</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6be7773e-ab0c-4ba0-9a7e-8f191aa055d9">
+          <ID>Fruits</ID>
+          <Name>Fruits</Name>
+          <SourceColumnID>Fruits</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="44729fca-4a1c-459f-a037-e9c75ce87c57">
+          <ID>Gold</ID>
+          <Name>Gold</Name>
+          <SourceColumnID>Gold</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c581e510-b9af-4c68-8969-9f4c8df8a897">
+          <ID>ID</ID>
+          <Name>ID</Name>
+          <SourceColumnID>ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="00deba9c-aa78-45f7-8142-7e593d83d20a">
+          <ID>Meat</ID>
+          <Name>Meat</Name>
+          <SourceColumnID>Meat</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a9fd3c53-058e-404d-96dc-e837959ed91f">
+          <ID>Response</ID>
+          <Name>Response</Name>
+          <SourceColumnID>Response</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="1d878393-5ab7-42c3-a887-2d6d42ec0556">
+          <ID>Sweets</ID>
+          <Name>Sweets</Name>
+          <SourceColumnID>Sweets</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a5108325-4d07-44fc-8b67-2dbe12bc958a">
+          <ID>Wines</ID>
+          <Name>Wines</Name>
+          <SourceColumnID>Wines</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
